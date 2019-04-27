@@ -1,0 +1,587 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    max-height: auto;
+    transition: .8s;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar { width: 0 !important }
+    
+}
+.menu{
+    background-color: #f8f8f8;
+    color: Black;
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    right: -200px;
+    top: 0;
+    z-index: 2;
+    font-family: 'Courgette', cursive;
+    transition: .8s;
+    display: block;
+    position:fixed;
+    .closing{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .navigation{
+        padding-top: 25%;
+        width: 100%;
+    }
+    .navitems{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        cursor: pointer;
+        color: black;
+        &:hover{
+            font-size: 25px;
+        }
+    }
+}
+.container{
+    height: auto;
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f1f1f1;
+    padding-bottom: 20px;
+}
+.landing{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .8s;
+    .intro{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        color: black;
+        background-blend-mode: color-burn;
+        .name{
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Righteous', cursive;
+        }
+        .profile{
+            font-family: 'Courgette', cursive;
+            font-size: 20px;
+        }
+    }
+}
+.burger{
+    height: 10px;
+    width: 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    span{
+        height: 3px;
+        width: 14px;
+        background: black;
+        cursor: pointer;
+    }
+}
+.articles{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    padding-bottom: 50px;
+    transition: .8s;
+    .articles_container{
+        width: 90%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        .heading{
+            font-family: 'Courgette', cursive;
+            font-size: 30px;
+        }
+        hr{
+            height: 3px;
+            background: black;
+            width: 100px;
+            border: none;
+        }
+        .blogging{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .blog{
+            height: auto;
+            width: 100%;
+            background: white;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            .blog_img{
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+           .title{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+                font-family: 'Righteous', cursive;
+                font-size: 20px;
+           }
+        }
+    }
+}
+.aboutus{
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px 0;
+    transition: .8s;
+    .heading{
+        font-family: 'Courgette', cursive;
+        font-size: 30px;
+    }
+    hr{
+        height: 3px;
+        background: black;
+        width: 100px;
+        border: none;
+        margin-bottom: 20px;
+    }
+    .aboutusimg{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        img{
+            width: 100%;
+        }
+    }
+    .aboutustext{
+        width: 90%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        font-family: 'Righteous', cursive;
+        font-size: 18px;
+    }
+}
+.contactus{
+    width: 90%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: .8s;
+    background: #fff;
+    padding: 20px 0;
+    .heading{
+        font-family: 'Courgette', cursive;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    hr{
+        height: 3px;
+        background: black;
+        width: 100px;
+        border: none;
+        margin-bottom: 20px;
+        
+    }
+    .contactusimg{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 0;
+        img{
+            width: 100%;
+        }
+    }
+}
+.contact{
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    font-size: 18px;
+    padding-left: 20px;
+    word-wrap: break-word;
+}
+.symbols{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 50px;
+    align-items: center;
+}
+.copywrite{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Courgette', cursive;
+    font-size: 10px;
+    height: 12px;
+}
+
+@media only screen and (max-width: 1920px){
+    .symbols{
+        width: 30%;
+    }
+    .contactus{
+        flex-direction: column;
+        padding: 20px 0;
+        width: 90%;
+        .contact_us_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .contactusimg{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .contactustext{
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        display: flex;
+    }
+    .aboutus{
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 20px 0;
+        margin-bottom: 40px;
+        .heading{
+            font-family: 'Courgette', cursive;
+            font-size: 30px;
+        }
+        hr{
+            height: 3px;
+            background: black;
+            width: 100px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .about_us_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 20px;
+        }
+        .aboutusimg{
+            width: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            order:1;
+            img{
+                width: 100%;
+            }
+        }
+        .aboutustext{
+            width: 45%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-family: 'Righteous', cursive;
+            font-size: 18px;
+            padding-right: 20px;
+        }
+    }
+
+    .articles{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        padding-bottom: 20px;
+        transition: .8s;
+        .articles_container{
+            width: 90%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            .heading{
+                font-family: 'Courgette', cursive;
+                font-size: 30px;
+            }
+            hr{
+                height: 3px;
+                background: black;
+                width: 100px;
+                border: none;
+            }
+            .blogging{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                
+            }
+            .blog{
+                height: auto;
+                width: 33%;
+                background: white;
+                padding-bottom: 10px;
+                margin-top: 10px;
+                .blog_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+               .title{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                    font-family: 'Righteous', cursive;
+                    font-size: 20px;
+               }
+            }
+        }
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .articles{
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f1f1f1;
+        padding-bottom: 50px;
+        transition: .8s;
+        .articles_container{
+            width: 90%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px 0;
+            .heading{
+                font-family: 'Courgette', cursive;
+                font-size: 30px;
+            }
+            hr{
+                height: 3px;
+                background: black;
+                width: 100px;
+                border: none;
+            }
+            .blogging{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+            .blog{
+                height: auto;
+                width: 100%;
+                background: white;
+                padding-bottom: 10px;
+                margin-top: 10px;
+                .blog_img{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
+                }
+               .title{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px 0;
+                    font-family: 'Righteous', cursive;
+                    font-size: 20px;
+               }
+            }
+        }
+    }
+    .aboutus{
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: #fff;
+        padding: 20px 0;
+        transition: .8s;
+        .about_us_container{
+            flex-direction: column;
+        }
+        .heading{
+            font-family: 'Courgette', cursive;
+            font-size: 30px;
+        }
+        hr{
+            height: 3px;
+            background: black;
+            width: 100px;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .aboutusimg{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            img{
+                width: 100%;
+            }
+        }
+        .aboutustext{
+            width: 90%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            font-family: 'Righteous', cursive;
+            font-size: 18px;
+        }
+    }
+    .contactus{
+        width: 90%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: .8s;
+        background: #fff;
+        padding: 20px 0;
+        .contact_us_container{
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .heading{
+            font-family: 'Courgette', cursive;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        hr{
+            height: 3px;
+            background: black;
+            width: 100px;
+            border: none;
+            margin-bottom: 20px;
+            
+        }
+        .contactusimg{
+            width: 100%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 0;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .contact{
+        width: 100%;
+        font-family: 'Righteous', cursive;
+        font-size: 18px;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .symbols{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        height: 50px;
+        align-items: center;
+    }
+    .copywrite{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        font-family: 'Courgette', cursive;
+        font-size: 10px;
+        height: 12px;
+    }
+}
+a{
+    text-decoration: none;
+    &:focus{
+        color: Black;
+    }
+    &:visited{
+        color: Black;
+    }
+}
